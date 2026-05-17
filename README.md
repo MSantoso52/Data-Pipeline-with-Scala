@@ -49,3 +49,8 @@ data-pipeline/
 2. **Compile the project:**
    ```bash
    sbt compile
+   ```
+3. **Run the project:**
+   ```bash
+   sbt clean run
+   ```
