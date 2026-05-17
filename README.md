@@ -20,6 +20,26 @@ A production-grade Scala Spark application designed to transform raw e-commerce 
 - Scala 2.12.x
 - sbt (Scala Build Tool)
 
+## Project Hierarchy
+data-pipeline/
+├── build.sbt                   # Project dependencies and settings
+├── project/                    # sbt build plugins
+│   └── build.properties        # Defines sbt version
+├── src/
+│   ├── main/
+│   │   └── scala/
+│   │       └── com/
+│   │           └── pipeline/
+│   │               ├── models/
+│   │               │   └── Transaction.scala   # Case classes
+│   │               └── SilverTransformer.scala # Main ETL Logic
+│   └── test/
+│       └── scala/              # Unit tests go here
+├── data/
+│   ├── bronze/                 # Raw input files (JSON)
+│   └── silver/                 # Processed output (Parquet)
+└── README.md                   # Documentation
+
 ## 🏃 How to Run
 1. **Place your raw data:** 
    Ensure your JSON files are in `data/bronze/`.
