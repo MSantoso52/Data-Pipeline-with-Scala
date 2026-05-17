@@ -21,6 +21,7 @@ A production-grade Scala Spark application designed to transform raw e-commerce 
 - sbt (Scala Build Tool)
 
 ## Project Hierarchy
+```
 data-pipeline/
 ├── build.sbt                   # Project dependencies and settings
 ├── project/                    # sbt build plugins
@@ -39,6 +40,7 @@ data-pipeline/
 │   ├── bronze/                 # Raw input files (JSON)
 │   └── silver/                 # Processed output (Parquet)
 └── README.md                   # Documentation
+```
 
 ## 🏃 How to Run
 1. **Place your raw data:** 
