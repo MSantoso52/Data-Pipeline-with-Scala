@@ -1,4 +1,5 @@
 # Scala Data Pipeline: Silver Layer Transformer
+![]()
 
 A production-grade Scala Spark application designed to transform raw e-commerce transaction data (Bronze) into a cleaned, typed Parquet format (Silver).
 
